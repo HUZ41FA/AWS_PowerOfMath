@@ -52,7 +52,7 @@
                 body: raw,
                 redirect: 'follow'
             };
-            fetch("https://c44p9b6jk1.execute-api.us-east-1.amazonaws.com/DEV/calculate", requestOptions)
+            fetch("YOUR_ENDPOINT", requestOptions)
             .then(response => response.json())
             .then(result =>alert(result.body))
             .catch(error => console.log('error', error));
